@@ -429,11 +429,12 @@ a {
 .btn-forms {
   color: #ffffff;
   font-size: 1.125rem;
+  letter-spacing: 0.1em;
   width: 100%;
   height: 60px;
   border-color: rgba(255, 255, 255, 0);
   background-color: rgba(255, 255, 255, 0.1);
-  border-bottom-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(255, 255, 255, 0.3);
 }
 .btn-forms:hover, .btn-forms:focus {
   cursor: pointer;
@@ -985,7 +986,7 @@ a {
 }
 .footer__social-icons a {
   display: block;
-  padding: 10px;
+  padding: 9.2px;
   -webkit-transition: color 0.5s;
   -o-transition: color 0.5s;
   transition: color 0.5s;

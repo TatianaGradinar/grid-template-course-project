@@ -773,14 +773,13 @@ a {
   font-size: 1.125rem;
   letter-spacing: 0.15em;
   color: #ffffff;
-  -webkit-transition: background-color 0.5s, border-color 0.5s;
-  -o-transition: background-color 0.5s, border-color 0.5s;
-  transition: background-color 0.5s, border-color 0.5s;
-  border: 2px solid rgba(255, 255, 255, 0);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  border-color: rgba(255, 255, 255, 0.01);
   border-bottom-color: rgba(255, 255, 255, 0.25);
   background-color: rgba(255, 255, 255, 0.05);
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 0 30px;
 }
 .form-item__input::-webkit-input-placeholder {
   color: #637588;
@@ -797,24 +796,28 @@ a {
 .form-item__input::placeholder {
   color: #637588;
 }
-.form-item__input:hover, .form-item__input:focus {
+.form-item__input:hover, .form-item__input:focus-visible, .form-item__input:active {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   border-color: rgba(255, 255, 255, 0.15);
   border-bottom-color: #ffffff;
+  outline: none;
   background-color: rgba(255, 255, 255, 0.15);
 }
-.form-item__input:hover::-webkit-input-placeholder, .form-item__input:focus::-webkit-input-placeholder {
+.form-item__input:hover::-webkit-input-placeholder, .form-item__input:focus-visible::-webkit-input-placeholder, .form-item__input:active::-webkit-input-placeholder {
   color: #8c9bab;
 }
-.form-item__input:hover::-moz-placeholder, .form-item__input:focus::-moz-placeholder {
+.form-item__input:hover::-moz-placeholder, .form-item__input:focus-visible::-moz-placeholder, .form-item__input:active::-moz-placeholder {
   color: #8c9bab;
 }
-.form-item__input:hover:-ms-input-placeholder, .form-item__input:focus:-ms-input-placeholder {
+.form-item__input:hover:-ms-input-placeholder, .form-item__input:focus-visible:-ms-input-placeholder, .form-item__input:active:-ms-input-placeholder {
   color: #8c9bab;
 }
-.form-item__input:hover::-ms-input-placeholder, .form-item__input:focus::-ms-input-placeholder {
+.form-item__input:hover::-ms-input-placeholder, .form-item__input:focus-visible::-ms-input-placeholder, .form-item__input:active::-ms-input-placeholder {
   color: #8c9bab;
 }
-.form-item__input:hover::placeholder, .form-item__input:focus::placeholder {
+.form-item__input:hover::placeholder, .form-item__input:focus-visible::placeholder, .form-item__input:active::placeholder {
   color: #8c9bab;
 }
 

@@ -40,27 +40,29 @@
     font-size: 1.125rem;
     letter-spacing: 0.15em;
     color: $color-light;
-    transition: background-color 0.5s, border-color 0.5s;
-    border: 2px solid rgba($color-light, 0);
+    transition: 0.5s;
+    border-color: rgba($color-light, 0.01);
     border-bottom-color: rgba($color-light, 0.25);
     background-color: rgba($color-light, 0.05);
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 0 30px;
 
     &::placeholder {
       color: $color-gray;
     }
 
     &:hover,
-    &:focus {
+    &:focus-visible,
+    &:active {
+      transition: .5s;
+
       border-color: rgba($color-light, 0.15);
       border-bottom-color: $color-light;
+      outline: none;
       background-color: rgba($color-light, 0.15);
-    }
 
-    &:hover::placeholder,
-    &:focus::placeholder {
-      color: $color-gray-warm;
+      &::placeholder {
+        color: lighten($color-gray, 15%);
+      }
     }
   }
 }
